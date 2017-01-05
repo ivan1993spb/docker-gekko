@@ -8,7 +8,8 @@ RUN mkdir -p /gekko && \
 
 WORKDIR /gekko
 
-RUN npm install
+RUN npm install; \
+    npm install talib@1.0.2 redis@0.10.0
 
 VOLUME /gekko/history
 
