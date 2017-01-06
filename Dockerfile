@@ -9,7 +9,8 @@ RUN mkdir -p /gekko && \
 WORKDIR /gekko
 
 RUN npm install; \
-    npm install talib@1.0.2 redis@0.10.0
+	# install TA-lib, Redis, PostgreSQL modules
+    npm install talib@1.0.2 redis@0.10.0 pg
 
 VOLUME /gekko/history
 
