@@ -29,6 +29,8 @@ services:
       - gekko_history:/gekko/history
       # create your gekko config here
       # - ./config.js:/gekko/config.js
+    depends_on:
+      - postgres
 
 volumes:
   gekko_history:
