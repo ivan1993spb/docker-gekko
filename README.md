@@ -24,7 +24,6 @@ services:
   gekko:
     image: ivan1993spb/gekko
     restart: always
-    hostname: gekko
     volumes:
       - gekko_history:/gekko/history
       # create your gekko config here
