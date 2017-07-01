@@ -8,9 +8,9 @@ RUN mkdir -p /gekko && \
 
 WORKDIR /gekko
 
-RUN npm install; \
+RUN npm install --production; \
     # install TA-lib, Redis, PostgreSQL modules
-    npm install talib@1.0.2 redis@0.10.0 pg bitfinex-api-node@1.0.2
+    npm install talib@1.0.2 redis@0.10.0 pg bitfinex-api-node@1.0.2 --production
 
 VOLUME /gekko/history
 
